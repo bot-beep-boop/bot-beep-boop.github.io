@@ -1,0 +1,61 @@
+body {
+    background-image: url('maxwell-maxwell-the-cat.gif');
+    background-size: repeat;
+    background-attachment: fixed;
+    background-color: gray;
+    animation: scrollBg 10s linear infinite;
+}
+
+.container {
+    background-color: gray;
+    background-size: cover;
+
+    /* fill the screen down */
+    min-height: 100vh;
+
+    /* rounded corners */
+    border-radius: 10px;
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    text-align: center;
+    font-family: monospace;
+    
+    /* play anim until the end */
+    animation: typing 3.5s steps(40, end) forwards;
+}
+
+.row {
+    margin: 0;
+}
+
+.row.buttontext {
+    text-align: center;
+}
+
+img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+@keyframes scrollBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+
+}
